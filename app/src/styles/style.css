@@ -1,0 +1,16 @@
+@import "base/global.css";
+@import "base/variables.css";
+@import "base/mixins";
+
+@import "modules/navbar.css";
+@import "modules/header.css";
+@import "modules/howItWorks.css";
+@import "modules/courses.css";
+@import "modules/programs.css";
+@import "modules/teacher.css";
+@import "modules/askQuestion.css";
+@import "modules/feedback.css";
+@import "modules/contacts.css";
+@import "modules/toTheTop.css";
+
+

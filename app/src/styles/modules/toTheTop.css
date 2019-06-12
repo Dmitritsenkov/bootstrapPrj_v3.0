@@ -1,0 +1,41 @@
+.toTheTop{
+
+	display: none;
+
+	@media (min-width: 1400px){
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 7%;
+	background: grey;
+	opacity: 0;
+	display: none;
+	cursor: pointer;
+	}
+}
+
+.toTheTop_link{
+	
+	display: none;
+
+	@mixin atLarge{
+	display: block;
+	position: absolute;
+	top: 90;
+	left: 12;
+	color: #FFF;
+	text-decoration: none;
+
+	}
+
+}
+
+.toTheTop_link:hover{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.fa-angle-up{
+	margin-right: .4rem;
+}

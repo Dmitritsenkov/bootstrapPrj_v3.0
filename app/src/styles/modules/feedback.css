@@ -1,0 +1,10 @@
+.reviews img {
+	width: 100px;
+	height: 100px;
+	transition: all .3s ease-out;
+}
+
+.reviews img:hover {
+	transform: scale(1.1);
+}
+

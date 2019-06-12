@@ -1,0 +1,31 @@
+.navbar {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	top: 0;
+	background: #0A0A0A;
+}
+
+.navbar a{
+	color: #FFF;
+	transition: all .8s ease-in-out;
+}
+
+.navbar a:hover{
+	transition: all .8s ease-in-out;
+}
+
+.navbar-nav{
+
+	display: none;
+
+	@mixin atMedium{
+
+	display: flex;
+
+	}
+}
+
+.navbar_btn{
+	display: inline-block;
+}

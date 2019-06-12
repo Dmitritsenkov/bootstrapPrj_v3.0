@@ -1,0 +1,509 @@
+<html lang="en">
+
+<head>
+  <title>Курсы по Frontend разработке</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="dist/style.css"/>
+
+
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600'/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+</head>
+
+<body>
+
+
+<nav id="prime_nav" class="navbar navbar-expand-md">
+
+       <a class="navbar-brand" href="#">FrontendCamp</a>
+
+     <ul class="navbar-nav mr-auto">
+	     <li class="nav-item"><a id="link-header" class="nav-link" href="#header">Главная</a></li>       
+       <li class="nav-item"><a id="link-courses" class="nav-link" href="#courses">Курсы</a></li>
+       <li class="nav-item"><a id="link-programs" class="nav-link " href="#programs">Программа</a></li>
+       <li class="nav-item"><a id="link-teachers" class="nav-link " href="#teachers">Преподаватели</a></li>
+       <li class="nav-item"><a id="link-contacts" class="nav-link " href="#contacts">Контакты</a></li>
+     </ul>
+
+     <button class="btn btn-primary navbar_btn">Записаться на курс</button>
+</nav>
+
+<section id="header" class="header">
+	<style>
+		.header{
+			background-image: url('src/images/computer_room3.jpg');
+			background-size: cover;
+	position: relative;
+	height: 100%;
+	padding-top: 20%;
+		}
+	</style>
+	
+	<div class="container">
+      <div class="row">
+          <div class="header_container col-12 text-center">
+            <h1 class="header_mainTitle">FrontendCamp</h1>
+        		<h2 class="header_secondTitle">Офлайн курсы По Frontend разработке в Таллинне</h2>
+        		<button class="btn btn-primary btn-primary__header">Записаться на курс</button><br/>
+          </div>
+      </div>
+    </div>
+            <img class="blackArrow header_viewCourses_blackArrow" id="#howItWorks" onclick="down(event)" src="src/images/black_arrow.svg" alt="header logo"/>
+</section>
+
+
+<section id="howItWorks" class="howItWorks">
+
+  <h1 class="howItWorks_title mb-4">Как это работает?</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+<div id="my-slider" class="carousel slide" data-ride="carousel" data-interval="0">
+
+  <ol id="carousel-indicators" class="carousel-indicators stepper stepper-horizontal">
+    <li class="indicator-item active" data-target="#carouselExampleIndicators" data-md-step="md-step1" data-slide-to="0"></li>
+    <li class="indicator-item" data-target="#carouselExampleIndicators" data-md-step="md-step2" data-slide-to="1"></li>
+    <li class="indicator-item" data-target="#carouselExampleIndicators" data-md-step="md-step3" data-slide-to="2"></li>
+    <li class="indicator-item" data-target="#carouselExampleIndicators" data-md-step="md-step4" data-slide-to="3"></li>
+    <li class="indicator-item" data-target="#carouselExampleIndicators" data-md-step="md-step5" data-slide-to="4"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="src/images/slider/1_c_c_T.jpg" alt="First slide"/>
+      <div class="carousel-caption d-md-block">
+    <h5>Комфортное рабочее место</h5>
+  </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="src/images/slider/2_c_c.png" alt="Second slide"/>
+<div class="carousel-caption d-md-block">
+    <h5>Практические домашние задания</h5>
+    <p></p>
+  </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="src/images/slider/3_c_c.jpg" alt="Third slide"/>
+    <div class="carousel-caption d-md-block">
+    <h5>Получение обратной связи</h5>
+  </div>
+    </div>
+
+  <div class="carousel-item">
+      <img class="d-block w-100" src="src/images/slider/4_c_c.jpg" alt="Third slide"/>
+    <div class="carousel-caption d-md-block">
+    <h5>Экзамены и создание своего проекта + защита</h5>
+  </div>
+  </div>
+
+  <div class="carousel-item">
+    <img class="d-block w-100" src="src/images/slider/6.jpg" alt="Фотография с дипломом"/>
+  </div>
+
+
+  </div>
+
+  <a class="carousel-control-prev" onclick="changeStep(event)" href="#my-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" onclick="changeStep(event)" href="#my-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+<div class="md-stepper-horizontal orange">
+    <div id="md-step1" class="md-step active">
+      <div class="md-step-circle"><span>1</span></div>
+      <div class="md-step-title">Обучение в классе</div>
+      <div class="md-step-bar-left"></div>
+      <div class="md-step-bar-right"></div>
+    </div>
+    <div id="md-step2" class="md-step">
+      <div class="md-step-circle"><span>2</span></div>
+      <div class="md-step-title">Домашние задания</div>
+      <div class="md-step-bar-left"></div>
+      <div class="md-step-bar-right"></div>
+    </div>
+    <div id="md-step3" class="md-step">
+      <div class="md-step-circle"><span>3</span></div>
+      <div class="md-step-title">Обратная связь</div>
+      <div class="md-step-bar-left"></div>
+      <div class="md-step-bar-right"></div>
+    </div>
+    <div id="md-step4" class="md-step">
+      <div class="md-step-circle"><span>4</span></div>
+      <div class="md-step-title">Экзамены</div>
+      <div class="md-step-optional">Личный проект</div>
+      <div class="md-step-bar-left"></div>
+      <div class="md-step-bar-right"></div>
+    </div>
+    <div id="md-step5" class="md-step">
+      <div class="md-step-circle"><span>5</span></div>
+      <div class="md-step-title">Диплом</div>
+      <div class="md-step-bar-left"></div>
+      <div class="md-step-bar-right"></div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="courses" class="courses pricing py-5">
+
+  <h3>Курсы</h3>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-5">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Frontend для Новичков</h5>
+            <h6 class="card-price text-center"><del>€280</del> <span class="newPrice">€224</span><span class="period">/ мес</span></h6>
+            <hr/>
+            <ul class="fa-ul">
+              <li>Срок: <strong>3 месяца</strong></li>
+              <li>Время курсов: <strong>Пн,Ср 18:00-21:00</strong></li>
+              <li>Группа: <strong>8-12 человек</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Начало курса:<strong> 28.09.2019</strong></li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Записаться на курс</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-5">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Frontend для продвинутых</h5>
+            <h6 class="card-price text-center">€280 <span class="period">/ мес</span></h6>
+            <hr/>
+            <ul class="fa-ul">
+              <li>Срок: <strong>3 месяца</strong></li>
+              <li>Время курсов: <strong>Вт,Чт 18:00-21:00</strong></li>
+              <li>Группа: <strong>8-12 человек</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Начало курса:<strong> 29.09.2019</strong></li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Записаться на курс</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="courses_moneyBack text-center">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-sm-12 mb-5">
+          <h2>Гарантия</h2>
+          <img width="150" src="src/images/moneyback.svg" alt="гарантия"/>
+          <p>В течении первых 2-х недель вы можете отказаться от курса и вернуть все деньги</p>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <h2>Курс в рассрочку</h2>
+          <img width="150" src="src/images/installmentPlan.png" alt="курс в расрочку"/>
+          <p>Если у Вас нет возможности оплатить весь курс сразу, у нас действует рассрочка, оплата за каждый месяц. </p>
+        </div> 
+         
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="programs" class="programs text-center">
+		<h3 class="mt-2">Программы курсов</h3>
+    <div class="container">
+    <div class="row">
+
+		<div class="col-md-5 col-sm-12">
+      <h4 class="text-center mt-4 mb-4">Frontend для новичков</h4>
+
+
+
+      <div class="m-auto">
+
+        <div id="accordion">
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn_card_programs" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Месяц 1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse collapse_programs" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Месяц 2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse collapse_programs" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Месяц 3 
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse collapse_programs" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+          Экзамены и проекты
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse collapse_programs" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+        <div class="col-2"></div>
+
+    		<div class="col-md-5 col-sm-12 mt-4">
+
+        <h4 class="text-center mt-4 mb-4">Frontend для продвинутых</h4>
+
+      <div class="">
+
+<div id="accordion2">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseOne_advanced" aria-expanded="false" aria-controls="collapseOne_advanced">
+          Месяц 1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne_advanced" class="collapse collapse_programs" aria-labelledby="headingOne" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseTwo_advanced" aria-expanded="false" aria-controls="collapseOne_advanced">
+          Месяц 2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo_advanced" class="collapse collapse_programs" aria-labelledby="headingTwo" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseThree_advanced" aria-expanded="false" aria-controls="collapseOne_advanced">
+          Месяц 3 
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree_advanced" class="collapse collapse_programs" aria-labelledby="headingThree" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed btn_card_programs" data-toggle="collapse" data-target="#collapseFour_advanced" aria-expanded="false" aria-controls="collapseOne_advanced">
+          Экзамены и проекты
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour_advanced" class="collapse collapse_programs" aria-labelledby="headingThree" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+          <img class="evolution-img" src="src/images/ev(1).png" alt="картинка с эволюцией человека"/>
+</div>
+
+</section>
+
+
+  <section id="teachers" class="teachers pb-5">
+
+  <h3 class="mt-2 mb-4">Преподаватели</h3>
+
+<div class="container">
+
+    <div class="card flex-row flex-wrap">
+        <div class="card-header border-0">
+          <img class="teacher-img" src="src/images/teacher.jpg" alt="фото прподавателя"/>
+        </div>
+        <div class="card-block px-2 ml-3 mt-2">
+            <h4 class="card-title mt-3">Александр Ларченко</h4>
+            <p class="card-text">Senior Frontend Developer</p>
+              <ul class="teacher_expList">
+              <li class="">Опыт в ИТ - более 8-и лет</li>
+              <li class="">Frontend Developer более 6-ти лет</li>
+              <li class="">....</li>
+              <li class="">....</li>
+              <li class="">....</li>
+              <li class="">.....</li>
+              <li class="">.....</li>
+            </ul>
+        </div>
+
+        <div class="w-100"></div>
+          <div class="card-footer w-100 text-muted">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-google"></span>
+            <span class="fa fa-linkedin"></span>
+            <span class="fa fa-instagram"></span>
+        </div>
+    </div>
+
+
+    <div class="card flex-row flex-wrap mt-5">
+        <div class="card-header border-0">
+          <img class="teacher-img" src="src/images/teacher-2.jpg" alt="фото прподавателя"/>
+        </div>
+        <div class="card-block px-2 ml-3 mt-2">
+            <h4 class="card-title mt-3">Дмитрий Иванов</h4>
+            <p class="card-text">Senior Frontend Developer</p>
+              <ul class="teacher_expList">
+              <li class="">Опыт в ИТ - более 8-и лет</li>
+              <li class="">Frontend Developer более 6-ти лет</li>
+              <li class="">....</li>
+              <li class="">....</li>
+              <li class="">....</li>
+              <li class="">.....</li>
+              <li class="">.....</li>
+            </ul>
+        </div>
+
+        <div class="w-100"></div>
+          <div class="card-footer w-100 text-muted">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-google"></span>
+            <span class="fa fa-linkedin"></span>
+            <span class="fa fa-instagram"></span>
+        </div>
+    </div>
+
+
+    
+</div>
+
+</section>
+
+  
+
+<section id="contacts" class="contacts">
+    <h3>Контакты</h3>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 text-center">
+
+          <i class="material-icons">place</i>
+          <span>Kesklinn, Gonsiori tn 29 - 68, Kesklinna linnaosa
+          Tallinn, Harju maakond</span><br/>
+          <i class="material-icons">date_range</i>
+          <span>Пн-Чт, 10-22</span><br/>
+          <i class="material-icons">phone</i>
+          <span>+372 55597546</span><br/>
+          <i class="material-icons">email</i>
+          <span>FrontendCamp@gmail.com</span>
+        </div>
+
+      </div>
+    </div>
+
+</section>
+
+<div href="#" class="toTheTop" onclick="toTheTop(event)">
+  <a href="#" class="toTheTop_link"><i class="fas fa-angle-up"></i>Наверх</a>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="dist/App.js"></script>
+
+</body>
+
+
+</html>

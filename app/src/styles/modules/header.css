@@ -1,0 +1,44 @@
+.header{
+	background-image: url("https://dmitritsenkov.github.io/bootstrapPrj_v2.0/app/src/images/computer_room2.jpg");
+	background-size: cover;
+	position: relative;
+	height: 100%;
+	padding-top: 20%;
+}
+
+
+.header_mainTitle{
+	color: #D9DADA;
+	font-size: 2rem;
+	margin-top: 10rem;
+
+	@mixin atMedium{
+	margin-top: 0;
+	font-size: 2.5rem; 
+	}
+
+}
+
+
+.header_secondTitle{
+	color: #E75926;
+	font-size: 1.5rem;
+
+	@mixin atMedium{
+		font-size: 1.9rem;
+	}
+
+}
+
+.header_viewCourses_blackArrow{
+	opacity: .7;
+}
+
+.header_viewCourses_blackArrow:hover{
+	opacity: .9
+}
+
+
+
+
+
