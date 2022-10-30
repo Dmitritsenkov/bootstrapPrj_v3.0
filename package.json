@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.27.10",
     "gulp-chokidar": "0.0.5",
     "gulp-postcss": "^8.0.0",
     "postcss-import": "^12.0.1",
